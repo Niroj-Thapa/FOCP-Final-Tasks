@@ -4,20 +4,20 @@ runners = []
 time = []
 
 while True:
-        data = input(">")
-        #Check if the input is "END"
-        if data == "END":
-            break
-        else:
-            try:
-                data = data.split("::")
-                runner1 = int(data[0])
-                time1 = int(data[1])
-                runners.append(runner1)
-                time.append(time1)
-            except:
-                print("Error in data stream. Ignorning. Carry on.")
-        continue
+    data = input(">")
+    #Check if the input is "END"
+    if data == "END":
+        break
+    else:
+        try:
+            data = data.split("::")
+            runner1 = int(data[0])
+            time1 = int(data[1])
+            runners.append(runner1)
+            time.append(time1)
+        except:
+            print("Error in data stream. Ignorning. Carry on.")
+    continue
    
 try:
     # Function to convert time from seconds to minutes and seconds
